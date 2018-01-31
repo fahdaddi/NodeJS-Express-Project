@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Gyroscope INPT
+    // Bootstrap core CSS
+    link(href='/stylesheets/bootstrap.min.css', rel='stylesheet')
+    link(href='/stylesheets/bootstrap.css', rel='stylesheet')
+    // Custom fonts for this template
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/simple-line-icons.css')
+    link(href='https://fonts.googleapis.com/css?family=Lato', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Muli', rel='stylesheet')
+    //link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+  body#page-top
+    // Navigation
+    nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+      .container(class=title=="downloadpdf" ? 'active' : undefined)
+        a.navbar-brand.js-scroll-trigger(href='/') Gyroscope
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+          | Menu
+          i.fa.fa-bars
+        #navbarResponsive.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item(class=title=="downloadpdf" ? 'active' : undefined)
+              a.nav-link.js-scroll-trigger(href='/downloadpdf') Télécahrger le pdf
+            li.nav-item(class=title=="about" ? 'active' : undefined)
+              a.nav-link.js-scroll-trigger(href='/about') À propos de nous
+            li.nav-item(class=title=="contact" ? 'active' : undefined)
+              a.nav-link.js-scroll-trigger(href='/contact') Contactez nous
+    block content
+
+  footer
+    .container(style="text-align: center")
+      .col-mg-6.col-mg-offset-3
+        p © 2018 Gyroscope. All Rights Reserved.
+        ul.list-inline
+          li.list-inline-item
+            a(href='http://www.inpt.ac.ma') INPT
+          li.list-inline-item
+            a(href='#') Terms
+          li.list-inline-item
+            a(href='#') FAQ

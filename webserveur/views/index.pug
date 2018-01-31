@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+  header.masthead(style="background-image:url('/images/image1.jpg');")
+    .container.h-100
+      .row.h-100
+
+        .col-lg-5.my-auto
+          .device-container
+            .device-mockup.iphone6_plus.portrait.white
+              .device
+                .screen(style="margin-top:120px")
+                  img.img-fluid(src='/images/image3.jpg', alt='')
+                .button
+        .col-lg-7.my-auto
+          .header-content.mx-auto
+            h1(style="margin-top:200px;margin-bottom:80px")
+
+                  |         Gyrolaser INPT
+      .row
+        .col-lg-5
+        .col-lg-4
+          a.btn.btn-outline.btn-xl.js-scroll-trigger(href='/downloadpdf')(style="margin-bottom:35px")
+            h3.btn.btn-primary
+              | Plus d'Informations!

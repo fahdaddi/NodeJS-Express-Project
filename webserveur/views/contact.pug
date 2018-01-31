@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .jumbotron
+    .row
+      .col-md-3
+      .col-md-6
+        .row
+          .col-md-1
+          .col-md-10
+            h1 Envoyez nous un message!
+          .col-md-1
+        .row
+          .col-md-3
+          .col-md-6
+            p
+              | nous répondrons dès que possible
+          .col-md-3
+      .col-md-3
+    form(method="post", action="contact/send")
+      h1 #{name}
+      .form-group
+        label Nom complet
+        input.form-control(type="text", name="name", placeholder="Entrez votre Nom")
+      .form-group
+        label Email
+        input.form-control(type="email", name="email", placeholder="Entrez votre Email")
+      .form-group
+        label Message
+        textarea.form-control(name="message", placeholder="Votre Message")
+      button.btn.btn-default(type="submit") Submit
